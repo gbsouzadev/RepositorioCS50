@@ -40,7 +40,7 @@ int main(void)
 
     // 3th Luhn's step - Chack if last number == 0.
     lastDigit = res % 10;
-    if (lastDigit)
+    if (lastDigit != 0)
     {
         printf("INVALID\n");
     }
