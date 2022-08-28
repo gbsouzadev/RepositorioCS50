@@ -1,0 +1,17 @@
+sort1 uses:
+Bubble Sort
+
+How do you know?:
+This sorting algorithm was the fastest to run sorted50000.txt and also the slowest to run reversed50000.txt. That means it had the best big omega for the sorted file, just as expected from the bubble sorting algorithm.
+
+sort2 uses:
+Merge Sort
+
+How do you know?:
+Merge sort was by far the fastest to run both random50000.txt and reversed50000.txt, just as expected from that sorting algorithm. It also wasn't the fastest to run the sorted50000.txt, which is also expected, since bubble sort should have the best big omega for such scenario.
+
+sort3 uses:
+Selection Sort
+
+How do you know?:
+Since both bubble sort and merge sort was already identified, selection sort was obviously sort3. Anyway, one could notice that it is faster them sort1(bubble sorting) when it comes to run reversed50000, considering that bubble sorting takes longer by bringing the lowest values from right to left positions.
