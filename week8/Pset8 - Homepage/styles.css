@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #857E7B;
+    background: linear-gradient(#CAA5C0, #F0E5ED 90%);
+    font: 1.5rem 'Roboto' sans-serif;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+article {
+    padding: 4rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.top-article {
+    margin-top: 6.5rem;
+}
+
+.bottom-article {
+    padding-bottom: 6.5rem;
+}
+
+.article-content {
+    text-align: justify;
+    border: 6px double #333;
+    padding: 1rem 1rem 0.1rem;
+    border-radius: 15px;
+    background-color: #F5E0B7;
+    font-weight: bold;
+}
+
+
+.troll {
+    font-weight: normal;
+    text-align: right;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer p {
+    background: #222;
+    color: whitesmoke;
+    font-weight: 600;
+    height: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    background-color: light-purple;
+}
+
+.animate {
+    animation: 5s ease-in-out 1.5s 50 normal forwards slide;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+    transform: translateX(80px) rotate(360deg);
+    }
+    66% {
+    transform: translateX(-80px) rotate(-360deg);
+    }
+    100% {
+    transform: translateX(0);
+    background-color: rebeccapurple;
+    }
+}
+
+.div-btn {
+    padding: 1rem;
+    padding-top: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.8rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 2;
+}
+
+
+.button {
+    background-color: #222;
+    color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    line-height: 2;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 3px 3px 4px #555;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #333;
+    transform: scale(105%);
+}
+
+.button:active {
+    background-color: whitesmoke;
+    color: #222;
+    border: 2px solid #222;
+}
+
+.float {
+    display: block;
+    width: 40%;
+    height: auto;
+    float: left;
+    padding-top: 0.4rem;
+}
+
+.html-float {
+    display: block;
+    width: min(40%, 150px);
+    height: auto;
+    float: left;
+    padding-top: 0.4rem;
+}
+
+.css-float {
+    display: block;
+    width: min(40%, 100px);
+    height: auto;
+    float: left;
+    padding-top: 0.4rem;
+    padding-right: 0.6rem;
+}
+
+.js-float {
+    display: block;
+    width: min(40%, 150px);
+    height: auto;
+    float: left;
+    padding-top: 0.4rem;
+    padding-right: 0.6rem;
+}
+
