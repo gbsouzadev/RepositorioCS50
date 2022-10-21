@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block main %}
+    <p>Contact us via <a href="https://www.instagram.com/escoladourada/" target="_blank">Instagram</a>.</p>
+    <p>You can also leave a message below. We'll never spam your inbox nor share your info!</p>
+    <form action="/contact" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="name" name="name" placeholder="Name (required)" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email (required)" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control mx-auto w-auto" id="message" name="message" cols="25" rows="10" placeholder="Type your message here"></textarea>
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="whatsapp" name="whatsapp" placeholder="WhatsApp (optional)" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="reset">Reset</button>
+    </form>
+{% endblock %}
